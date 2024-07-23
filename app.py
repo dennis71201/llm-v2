@@ -41,9 +41,9 @@ def handle_message(event):
     # print(response.json()['textResponse'])
     if event.message.text=="台大雲林分院內外科綜合加護病房的訪客時間是什麼時候":
         message = TextSendMessage('訪客時間為一天一次，時間為10點半到11點。')
-    elif event.massage.text=="骨髓穿刺檢查需要多少時間":
+    elif event.message.text=="骨髓穿刺檢查需要多少時間":
         message = TextSendMessage('骨髓穿刺檢查整個過程約20至30分鐘。')
-    elif event.massage.text=="放射線皮膚炎多發生於治療後的哪一個時間段":
+    elif event.message.text=="放射線皮膚炎多發生於治療後的哪一個時間段":
         message = TextSendMessage('放射線皮膚炎的主要發生時期為治療後兩道三週內，特別是在照射部位為頭頸部、胸部及臀部時。')
     else:
         message = TextSendMessage(text=event.message.text)
