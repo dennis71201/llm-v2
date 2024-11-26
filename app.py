@@ -12,7 +12,7 @@ line_bot_api = LineBotApi(os.environ.get('CHANNEL_ACCESS_TOKEN'))
 handler = WebhookHandler(os.environ.get('CHANNEL_SECRET'))
 
 # 定義 API 的 URL 和 Bearer Token
-api_url = "https://bdc2-59-125-78-141.ngrok-free.app/api/v1/workspace/0822/chat"
+api_url = "https://3325-59-125-78-142.ngrok-free.app/api/v1/workspace/0822/chat"
 bearer_token = "Z824BPY-18PMX2R-KPW1A14-X8DDYBJ"
 
 @app.route("/callback", methods=['POST'])
